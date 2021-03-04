@@ -1,0 +1,18 @@
+@mixin flexLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textStyles($transform: uppercase) {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: $transform;
+}
+
+@mixin centering($topValue) {
+    width: 100%;
+    @include flexLayout;
+    position: absolute;
+    top: $topValue
+}
